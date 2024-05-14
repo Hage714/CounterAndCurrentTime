@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import CurrentTime from './components/CurrentTime';
+import { useState } from 'react';
+import Counter from './components/Counter';
+
+
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const increaseCountButton = () => {
+    setCount(count + 2)
+    console.log("Button Clicked!!")
+  }
+  
+  const decreaseCountButton = () => {
+    setCount(count - 3)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CurrentTime />
+      <Counter increaseCountButton={increaseCountButton} decreaseCountButton={decreaseCountButton}  count={count} />
+
     </div>
   );
 }
 
 export default App;
+
+
