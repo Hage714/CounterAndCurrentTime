@@ -1,0 +1,22 @@
+.App {
+    text-align: center;
+  }
+  h3{
+    font-size: 25px;
+  }
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    background-color: #282c34;
+    color: white;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;
+}
