@@ -1,10 +1,16 @@
-
 import CurrentTime from "./components/CurrentTime";
 import { useState } from "react";
 import Counter from "./components/Counter";
 import DisplayStudents from "./components/DisplayStudents";
 import students from "./data/students";
-import './test.css';
+import EmployeesData from "./components/EmployeesData";
+import employees from "./data/employees";
+import ShoppingStyledList from "./components/ShoppingStyledList";
+import items from "./data/shoppinglist";
+import StudentsForm from "./components/StudentsForm";
+
+
+//import './test.css';
 
 
 function App() {
@@ -27,6 +33,7 @@ function App() {
   };
   return (
     <div className="App">
+      {/* 
       <CurrentTime />
       <Counter
         increaseCountButton={increaseCountButton}
@@ -35,7 +42,11 @@ function App() {
       />
 
       <DisplayStudents students={students} />
+<EmployeesData  employees = {employees} />
+<ShoppingStyledList items = {items} />
+*/}
 
+<StudentsForm />
 
     </div>
   );

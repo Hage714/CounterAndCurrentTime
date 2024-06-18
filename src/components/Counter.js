@@ -7,6 +7,7 @@ const Counter = ({ increaseCountButton, decreaseCountButton, count }) => {
     <div>
         <h5>The Count is: {count}</h5>
         <button onClick={increaseCountButton}>Increase Count</button>
+        
         <button onClick={decreaseCountButton}>Decrease Count</button>
     </div>
   )
